@@ -1,0 +1,10 @@
+# ninja log v5
+2	1136	1742114164167730907	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	79226201d05621c0
+1	1158	1742114164190857336	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2633ec17ae83c85b
+2	1176	1742114164210297744	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e0df09057e58b6ce
+3	1177	1742114164210773669	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b24191df605be33
+1	1212	1742114164245747754	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ad182194dd5abeda
+3	1318	1742114164352977257	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	aeb777a6c8ad7f32
+2	1368	1742114164403138680	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	98febfe5d24c2488
+0	1483	1742114164518371858	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e6698adfad7f1192
+1484	1600	1742114164635520944	/Users/cerentarim/Documents/GitHub/AR-Tennis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/445cd3c1/obj/arm64-v8a/libgame.so	1c22cc50f1838ef3
