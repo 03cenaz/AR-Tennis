@@ -38,30 +38,32 @@ public class tennisBall : MonoBehaviour
         }
 
         // BALL HIT NUMBER
+        ballCollisionCount ++;
         if (collision.gameObject.CompareTag("Court_Inner"))
         {
           //  courtCollisionCount++;
-            ballCollisionCount ++;
+          //  ballCollisionCount ++;
             inside = true;
             Debug.Log("Ball Hit Court! " + courtCollisionCount);
-            UpdateScoreText();
+        //    UpdateScoreText();
 
             LaunchNewBall(); // ➕ Yeni top fırlat
         } else {    // out of the court
             inside = false;
             string objName = collision.gameObject.name;
             string objTag = collision.gameObject.tag;
-            Debug.Log("Çarpılan nesne adı: " + objName + " | Tag: " + objTag + " | ballCollisionCount: " + ballCollisionCount);
+            Debug.Log("Ball Hit Outside! name: " + objName + " | Tag: " + objTag + " | ballCollisionCount: " + ballCollisionCount);
           //  courtCollisionCount = 0;
         }
 
         // UPDATE COURT COLLISION NUMBER
-        if(ballCollisionCount == 0 && !inside){    // Ball first fall outside
+        if(ballCollisionCount == 1 && !inside){    // Ball first fall outside
             courtCollisionCount = 0;
         } else if(ballCollisionCount == 1 && inside){ // Ball first fall inside
             courtCollisionCount++;
         }
 
+        UpdateScoreText();
         
     }
 

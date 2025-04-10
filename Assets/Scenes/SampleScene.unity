@@ -10587,7 +10587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2620115543196721928, guid: 642f1c0df48a940f8b76030ca7da04ec, type: 3}
       propertyPath: m_TagString
-      value: Court
+      value: Squash
       objectReference: {fileID: 0}
     - target: {fileID: 2732718444018998916, guid: 642f1c0df48a940f8b76030ca7da04ec, type: 3}
       propertyPath: m_Material
@@ -24656,7 +24656,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 9.900477, y: 0.59606093, z: 9.989509}
   m_Center: {x: -0.067160405, y: -0.20196953, z: 0.022406533}
@@ -27274,7 +27274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705814004944355322, guid: d91cc4490d89879468a73f7eaa62f753, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9174312
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705814004944355322, guid: d91cc4490d89879468a73f7eaa62f753, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.58
       objectReference: {fileID: 0}
     - target: {fileID: 5705814004944355322, guid: d91cc4490d89879468a73f7eaa62f753, type: 3}
       propertyPath: m_LocalScale.z
@@ -27286,7 +27290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705814004944355322, guid: d91cc4490d89879468a73f7eaa62f753, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 5705814004944355322, guid: d91cc4490d89879468a73f7eaa62f753, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32582,7 +32586,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 10, y: 0.1, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
@@ -32648,8 +32652,8 @@ Transform:
   m_GameObject: {fileID: 1738697140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: 0.2, z: 0}
-  m_LocalScale: {x: 2.3467023, y: 0.1, z: 0.7911282}
+  m_LocalPosition: {x: 25, y: 0, z: 0}
+  m_LocalScale: {x: 2.3467023, y: 0.5, z: 0.7911282}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -34183,8 +34187,9 @@ GameObject:
   - component: {fileID: 1843282152}
   - component: {fileID: 1843282151}
   - component: {fileID: 1843282150}
+  - component: {fileID: 1843282154}
   m_Layer: 0
-  m_Name: Tennis_Court
+  m_Name: Tennis_Court_Outter
   m_TagString: Court
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34207,10 +34212,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 0.1, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 0.10000001, z: 1.2398936}
+  m_Center: {x: 0, y: 0, z: -4.3800516}
 --- !u!23 &1843282151
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34274,11 +34279,32 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25, y: 0, z: 0}
-  m_LocalScale: {x: 2.3764074, y: 0.1, z: 1.0680231}
+  m_LocalScale: {x: 2.3764074, y: 0.5, z: 1.0680231}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1843282154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843282149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 1.2398945}
+  m_Center: {x: 0, y: 0, z: 4.3800516}
 --- !u!1 &1845865655
 GameObject:
   m_ObjectHideFlags: 0
@@ -35497,8 +35523,11 @@ GameObject:
   - component: {fileID: 1915185425}
   - component: {fileID: 1915185424}
   - component: {fileID: 1915185427}
+  - component: {fileID: 1915185430}
+  - component: {fileID: 1915185429}
+  - component: {fileID: 1915185428}
   m_Layer: 0
-  m_Name: Tennis_Court_Out
+  m_Name: Tennis_Out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35589,10 +35618,73 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 2.2204459e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 2.2204459e-16, z: 1.9551286}
+  m_Center: {x: 0, y: 0, z: -4.022436}
+--- !u!65 &1915185428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915185422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1836033, y: 2.220446e-16, z: 6.0021167}
+  m_Center: {x: 4.408194, y: 0, z: 0.0011924193}
+--- !u!65 &1915185429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915185422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1587758, y: 2.220446e-16, z: 5.992005}
+  m_Center: {x: -4.4206104, y: 0, z: 0.013396568}
+--- !u!65 &1915185430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915185422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 1.9890409}
+  m_Center: {x: 0, y: 0, z: 4.0054793}
 --- !u!1 &1920233972
 GameObject:
   m_ObjectHideFlags: 0

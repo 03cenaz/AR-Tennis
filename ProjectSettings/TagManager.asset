@@ -8,6 +8,7 @@ TagManager:
   - PlayerHand
   - Court
   - Court_Inner
+  - Squash
   layers:
   - Default
   - TransparentFX
