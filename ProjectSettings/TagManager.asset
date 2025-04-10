@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - PlayerHand
   - Court
+  - Court_Inner
   layers:
   - Default
   - TransparentFX
