@@ -3633,7 +3633,7 @@ MonoBehaviour:
   maxVelocity: 10
   minVelocity: 0.1
   gravity: {x: 0, y: -9.81, z: 0}
-  floorY: 0
+  rayOriginOffset: 0.01
 --- !u!1 &163554119
 GameObject:
   m_ObjectHideFlags: 0
@@ -24193,11 +24193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4609131676833758082, guid: d32646a613259b74088b7f7b03f41b14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.62
+      value: 20.94
       objectReference: {fileID: 0}
     - target: {fileID: 4609131676833758082, guid: d32646a613259b74088b7f7b03f41b14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.37
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 4609131676833758082, guid: d32646a613259b74088b7f7b03f41b14, type: 3}
       propertyPath: m_LocalPosition.z
