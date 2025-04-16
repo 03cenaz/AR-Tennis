@@ -995,11 +995,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: c847d246-27e4-4269-81af-68ae9177d6b4
+  cloudProjectId: a15b233c-18e9-4dcc-ba96-0795d095963f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AR-Tennis
-  organizationId: ecenazz
+  projectName: AR-Tennis 2025-03-26_10-51-00
+  organizationId: cerentarim
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Anchor
   - PlayerHand
+  - Ball
+  - racket
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - Interactable
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Racket
+  - Wall
+  - Floor
   - 
   - 
   - 
