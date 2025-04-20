@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 153181037991909456}
   - component: {fileID: 6725278347109608757}
   m_Layer: 0
-  m_Name: squash_wall
+  m_Name: squash_frontwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

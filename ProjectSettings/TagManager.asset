@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Anchor
   - PlayerHand
+<<<<<<< Updated upstream
+=======
+  - Ball
+  - racket
+  - SquashFloor
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
