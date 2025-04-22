@@ -10,9 +10,9 @@ public class tennisBall : MonoBehaviour
     private AudioSource audioSource;
 
     // For launching new ball
- //   public GameObject ballPrefab;
-//    public Transform spawnPoint;  
-//    public float launchForce;
+    public GameObject ballPrefab;
+    public Transform spawnPoint;  
+    public float launchForce;
 
     private bool inside;
 
@@ -50,6 +50,13 @@ public class tennisBall : MonoBehaviour
            Debug.Log("Ball Hit Court! " + ballCollisionCount);
 
           //  LaunchNewBall(); // ➕ Yeni top fırlat
+        } else  if (collision.gameObject.CompareTag("TennisCourtFloor"))
+        {
+            inside = true;
+           // Debug.Log("Ball Hit Court! " + courtCollisionCount);
+           Debug.Log("Ball Hit Court! " + ballCollisionCount);
+
+        //  LaunchNewBall(); // ➕ Yeni top fırlat
         } else {    // out of the court
             inside = false;
             string objName = collision.gameObject.name;
@@ -63,6 +70,7 @@ public class tennisBall : MonoBehaviour
             courtCollisionCount = 0;
         } else if(ballCollisionCount == 1 && inside){ // Ball first fall inside
             courtCollisionCount++;
+            LaunchNewBall(); // ➕ Yeni top fırlat
         }
 
         UpdateScoreText();
@@ -78,7 +86,7 @@ public class tennisBall : MonoBehaviour
             scoreText.text = "Score: " + ballCollisionCount;
         }
     }
-    /*
+
     
         private void LaunchNewBall()
     {
@@ -99,9 +107,8 @@ public class tennisBall : MonoBehaviour
                 // ForceMode.VelocityChange → kütleyi önemsemeden doğrudan hız ekler (çok sert olur)
                 // ForceMode.Acceleration → ivme bazlı (kütleyle uyumlu
        
-
                 rb.AddForce(spawnPoint.right * launchForce, ForceMode.Impulse); // To send Ball straight
-                rb.AddForce(spawnPoint.forward * Random.Range(-0.3f, 0.3f), ForceMode.Impulse); // To send ball between left and right side a little
+               // rb.AddForce(spawnPoint.forward * Random.Range(-0.3f, 0.3f), ForceMode.Impulse); // To send ball between left and right side a little
 
                 Debug.Log("NEW BALL");
 
@@ -109,5 +116,5 @@ public class tennisBall : MonoBehaviour
         }
     }
 
-    */
+
 }
