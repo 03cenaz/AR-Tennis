@@ -1,0 +1,2 @@
+/Users/cerentarim/Documents/GitHub/AR-Tennis/Library/PramData/AndroidApplicationController/Cache/com.unity.template.vr/gradle-project/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/cerentarim/Documents/GitHub/AR-Tennis/Library/PramData/AndroidApplicationController/Cache/com.unity.template.vr/gradle-project/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
